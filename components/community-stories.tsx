@@ -52,7 +52,7 @@ export function CommunityStories() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
             Loved by Paris
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -112,7 +112,7 @@ export function CommunityStories() {
         </div>
 
         {/* Stats Section */}
-        <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-12 border border-primary/20">
+        <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6 md:p-12 border border-primary/20">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             <div>
               <p className="text-4xl md:text-5xl font-bold text-foreground mb-2">

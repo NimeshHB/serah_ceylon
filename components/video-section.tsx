@@ -12,7 +12,7 @@ export function VideoSection() {
     <section className="py-20 px-4 bg-muted/30">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-4 text-foreground">
             The Story of Serah Ceylon
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -75,7 +75,7 @@ export function VideoSection() {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-12 p-8 border border-secondary/30 rounded-lg bg-card text-center">
+        <div className="mt-12 p-6 md:p-8 border border-secondary/30 rounded-lg bg-card text-center">
           <h3 className="text-2xl font-semibold text-foreground mb-4">
             Ready to Experience the Difference?
           </h3>

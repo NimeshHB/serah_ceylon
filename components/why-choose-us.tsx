@@ -40,7 +40,7 @@ export function WhyChooseUs() {
     <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-4 text-foreground">
             Why Choose Serah Ceylon
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -70,7 +70,7 @@ export function WhyChooseUs() {
           })}
         </div>
 
-        <div className="mt-16 p-8 border border-secondary/30 rounded-lg bg-gradient-to-r from-secondary/5 to-transparent">
+        <div className="mt-16 p-6 md:p-8 border border-secondary/30 rounded-lg bg-gradient-to-r from-secondary/5 to-transparent">
           <div className="flex items-start gap-4">
             <div className="w-1 h-full bg-secondary rounded-full flex-shrink-0 mt-1" />
             <div>

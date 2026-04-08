@@ -115,7 +115,7 @@ export function ImmersiveHero() {
   const slide = slides[current]
 
   return (
-    <section className="relative w-full h-screen min-h-[600px] overflow-hidden bg-black">
+    <section className="relative w-full h-screen min-h-[520px] overflow-hidden bg-black">
       {/* Slides */}
       {slides.map((s, i) => (
         <div
@@ -140,13 +140,13 @@ export function ImmersiveHero() {
       ))}
 
       {/* Content */}
-      <div className="relative z-20 h-full flex items-center">
+      <div className="relative z-20 h-full flex items-end sm:items-center pb-24 sm:pb-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-2xl">
             {/* Badge */}
             <div
               key={`badge-${current}`}
-              className="inline-flex items-center gap-2 px-4 py-2 mb-6 text-xs font-bold uppercase tracking-widest text-amber-300 bg-amber-400/10 border border-amber-400/30 rounded-full backdrop-blur-sm animate-fade-in-up"
+              className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 mb-4 md:mb-6 text-[10px] md:text-xs font-bold uppercase tracking-widest text-amber-300 bg-amber-400/10 border border-amber-400/30 rounded-full backdrop-blur-sm animate-fade-in-up"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
               {slide.badge}
@@ -155,14 +155,14 @@ export function ImmersiveHero() {
             {/* Title */}
             <h1
               key={`title-${current}`}
-              className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-white mb-2 animate-fade-in-up"
+              className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-white mb-2 animate-fade-in-up"
               style={{ animationDelay: '100ms' }}
             >
               {slide.title}
             </h1>
             <h1
               key={`accent-${current}`}
-              className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-amber-400 mb-6 animate-fade-in-up"
+              className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-amber-400 mb-4 md:mb-6 animate-fade-in-up"
               style={{ animationDelay: '200ms' }}
             >
               {slide.titleAccent}
@@ -171,7 +171,7 @@ export function ImmersiveHero() {
             {/* Subtitle */}
             <p
               key={`sub-${current}`}
-              className="text-lg md:text-xl text-white/85 leading-relaxed mb-10 max-w-xl animate-fade-in-up"
+              className="text-sm sm:text-lg md:text-xl text-white/85 leading-relaxed mb-6 md:mb-10 max-w-xl animate-fade-in-up"
               style={{ animationDelay: '300ms' }}
             >
               {slide.subtitle}
@@ -180,22 +180,22 @@ export function ImmersiveHero() {
             {/* CTAs */}
             <div
               key={`cta-${current}`}
-              className="flex flex-wrap gap-4 animate-fade-in-up"
+              className="flex flex-wrap gap-3 md:gap-4 animate-fade-in-up"
               style={{ animationDelay: '400ms' }}
             >
               <Link
                 href={slide.ctaLink}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-amber-500 hover:bg-amber-400 text-black font-bold text-base rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(245,158,11,0.4)] group"
+                className="inline-flex items-center gap-2 px-5 py-3 md:px-8 md:py-4 bg-amber-500 hover:bg-amber-400 text-black font-bold text-sm md:text-base rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(245,158,11,0.4)] group"
               >
-                <ShoppingBag className="w-5 h-5" />
+                <ShoppingBag className="w-4 h-4 md:w-5 md:h-5" />
                 {slide.cta}
               </Link>
               <Link
                 href={slide.ctaSecondaryLink}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold text-base rounded-xl border border-white/30 backdrop-blur-sm transition-all duration-300 group"
+                className="inline-flex items-center gap-2 px-5 py-3 md:px-8 md:py-4 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm md:text-base rounded-xl border border-white/30 backdrop-blur-sm transition-all duration-300 group"
               >
                 {slide.ctaSecondary}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>

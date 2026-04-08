@@ -59,7 +59,7 @@ export function CategoryBento() {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[300px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[220px] sm:auto-rows-[260px] md:auto-rows-[300px]">
           {categories.map((category) => {
             const IconComponent = category.icon
 
@@ -67,7 +67,11 @@ export function CategoryBento() {
               <Link
                 key={category.id}
                 href={`/collections?category=${category.id}`}
-                className={`group relative overflow-hidden rounded-2xl ${category.size} cursor-pointer`}
+                className={`group relative overflow-hidden rounded-2xl cursor-pointer ${
+                  category.size === 'col-span-2 row-span-1'
+                    ? 'col-span-1 sm:col-span-2 row-span-1'
+                    : category.size
+                }`}
               >
                 {/* Background Image */}
                 <div className="absolute inset-0 w-full h-full">

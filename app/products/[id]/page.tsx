@@ -89,7 +89,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${collectionColor[product.collection]}`}>
                 {product.collection.charAt(0).toUpperCase() + product.collection.slice(1)}
               </div>
-              <h1 className="text-4xl font-bold text-foreground">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
                 {product.name}
               </h1>
               <p className="text-lg text-muted-foreground">
@@ -159,7 +159,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
 
         {/* Long Description */}
-        <Card className="p-8 bg-card border-border mb-16">
+        <Card className="p-5 md:p-8 bg-card border-border mb-16">
           <h2 className="text-2xl font-bold text-foreground mb-4">
             The Story
           </h2>
@@ -214,7 +214,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
         {/* Source Tracing */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8">
+          <h2 className="text-xl md:text-3xl font-bold text-foreground mb-8">
             Source & Sourcing
           </h2>
           <SourceTracing source={product.source} />
@@ -222,7 +222,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
         {/* Related Products */}
         <section>
-          <h2 className="text-3xl font-bold text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 md:mb-8">
             You Might Also Like
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

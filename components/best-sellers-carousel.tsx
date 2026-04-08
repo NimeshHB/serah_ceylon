@@ -33,9 +33,9 @@ export function BestSellersCarousel() {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex items-center justify-between mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 md:mb-12 gap-4">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-2 text-balance">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-2 text-balance">
               Curated Best Sellers
             </h2>
             <p className="text-muted-foreground">
@@ -44,20 +44,20 @@ export function BestSellersCarousel() {
           </div>
 
           {/* Navigation Arrows */}
-          <div className="hidden md:flex gap-2">
+          <div className="flex gap-2">
             <button
               onClick={() => scroll('left')}
-              className="p-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full transition-colors"
+              className="p-2.5 md:p-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full transition-colors"
               aria-label="Scroll left"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
             </button>
             <button
               onClick={() => scroll('right')}
-              className="p-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full transition-colors"
+              className="p-2.5 md:p-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full transition-colors"
               aria-label="Scroll right"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
             </button>
           </div>
         </div>
@@ -76,7 +76,7 @@ export function BestSellersCarousel() {
             {bestSellers.map((product) => (
               <div
                 key={product.id}
-                className="flex-shrink-0 w-80 snap-center group"
+                className="flex-shrink-0 w-64 sm:w-72 md:w-80 snap-center group"
               >
                 <Link href={`/products/${product.id}`} className="h-full">
                   <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
