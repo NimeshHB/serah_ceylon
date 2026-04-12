@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CartProvider } from '@/lib/cart-context'
 import { CuratorChat } from '@/components/curator-chat'
+import { Footer } from '@/components/footer'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -42,6 +43,7 @@ export default function RootLayout({
         <CartProvider>
           {children}
           <CuratorChat />
+          <Footer />
           {process.env.NODE_ENV === 'production' && <Analytics />}
         </CartProvider>
       </body>

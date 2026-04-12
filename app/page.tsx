@@ -2,11 +2,8 @@ import { Header } from '@/components/header'
 import { ImmersiveHero } from '@/components/immersive-hero'
 import { CategoryBento } from '@/components/category-bento'
 import { BestSellersCarousel } from '@/components/best-sellers-carousel'
-import { HealingHeritage } from '@/components/healing-heritage'
-import { CookTheCulture } from '@/components/cook-the-culture'
-import { ParisTrustBar } from '@/components/paris-trust-bar'
-import { CommunityStories } from '@/components/community-stories'
-import { HeritageNewsletter } from '@/components/heritage-newsletter'
+import { WhyChooseUs } from '@/components/why-choose-us'
+import { AnimatedMarquee } from '@/components/animated-marquee'
 
 export default function Home() {
   return (
@@ -15,11 +12,9 @@ export default function Home() {
       <ImmersiveHero />
       <CategoryBento />
       <BestSellersCarousel />
-      <HealingHeritage />
-      <CookTheCulture />
-      <ParisTrustBar />
-      <CommunityStories />
-      <HeritageNewsletter />
+      <AnimatedMarquee />
+      <WhyChooseUs />
+
     </main>
   )
 }

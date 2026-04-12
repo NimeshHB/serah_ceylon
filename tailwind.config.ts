@@ -11,6 +11,15 @@ const config: Config = {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
         mono: ['var(--font-mono)', 'monospace'],
       },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        }
+      },
+      animation: {
+        marquee: 'marquee 35s linear infinite',
+      }
     },
   },
   plugins: [],

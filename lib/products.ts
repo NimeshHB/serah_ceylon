@@ -63,6 +63,136 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'mdk-string-hopper-flour',
+    name: 'MDK White Rice String Hopper Flour',
+    collection: 'Grocery',
+    price: 8,
+    image: '/images/mdk-string-hopper-flour.jpg',
+    description: 'Fine white rice flour specially milled for making string hoppers (indi appa)',
+    longDescription: 'MDK White Rice String Hopper Flour is specially milled from premium white rice for making perfectly textured string hoppers (indi appa). The flour is finely ground and easy-cook, giving you soft, delicate string hoppers every time. A staple ingredient in Sri Lankan and South Indian households, perfect for breakfast and dinner.',
+    flavorProfile: { spice: 0, sweetness: 1, earthiness: 3, fruitiness: 0, florality: 0 },
+    source: {
+      region: 'Sri Lanka',
+      elevation: 'Lowlands',
+      harvest: 'Seasonal',
+      coordinates: { lat: 6.9, lng: 79.9 },
+      story: 'Manufactured by MDK Food Products (Pvt) Ltd, a trusted Sri Lankan food brand dedicated to quality and authentic taste. This flour is produced to meet the highest quality standards for traditional rice-based dishes.'
+    },
+    healthBenefits: [
+      { name: 'Easy Digest', description: 'Light and easy to digest for all ages', icon: '🌾' },
+      { name: 'Gluten-Free Base', description: 'Made from pure white rice, naturally low in gluten', icon: '✅' }
+    ],
+    tastingNotes: ['Mild', 'Soft', 'Neutral', 'Light'],
+    servingSize: '100g per serving',
+    shelfLife: '12 months',
+    origin: 'Sri Lanka',
+    featured: true
+  },
+  {
+    id: 'aachi-biryani-masala',
+    name: 'Aachi Biryani Masala',
+    collection: 'Spices',
+    price: 6,
+    image: '/images/aachi-biryani-masala.jpg',
+    description: 'Authentic aromatic biryani spice blend by Aachi — the mother of good taste',
+    longDescription: 'Aachi Biryani Masala is a perfectly balanced blend of premium whole spices and aromatic herbs crafted to give your biryani an authentic, restaurant-style taste. Packed with star anise, bay leaf, cloves, mace, and more, this masala brings out the rich golden colour and irresistible aroma that defines a truly great biryani.',
+    flavorProfile: { spice: 7, sweetness: 4, earthiness: 7, fruitiness: 2, florality: 6 },
+    source: {
+      region: 'Tamil Nadu, India',
+      elevation: 'Various',
+      harvest: 'Year-round',
+      coordinates: { lat: 11.0168, lng: 76.9558 },
+      story: 'Aachi Masala is India\'s No.1 masala brand, headquartered in Tamil Nadu. With decades of expertise, Aachi brings the authentic flavors of South India to kitchens across the world.'
+    },
+    healthBenefits: [
+      { name: 'Digestive Aid', description: 'Spice blend supports healthy digestion', icon: '🌿' },
+      { name: 'Antioxidant Rich', description: 'Natural spices packed with antioxidants', icon: '✨' }
+    ],
+    tastingNotes: ['Aromatic', 'Warm', 'Spiced', 'Rich'],
+    servingSize: '1–2 tsp per dish',
+    shelfLife: '18 months',
+    origin: 'India',
+    featured: true
+  },
+  {
+    id: 'aachi-chilli-chicken-masala',
+    name: 'Aachi Chilli Chicken Masala',
+    collection: 'Spices',
+    price: 6,
+    image: '/images/aachi-chilli-chicken-masala.jpg',
+    description: 'Bold and fiery chilli chicken spice blend for an authentic Indo-Chinese favourite',
+    longDescription: 'Aachi Chilli Chicken Masala gives you the perfect balance of heat and flavour to recreate the iconic chilli chicken dish at home. Crafted with premium red chillies and aromatic spices using Aachi\'s Aroma Lock Processing technology, this masala ensures maximum freshness and bold taste in every pack.',
+    flavorProfile: { spice: 9, sweetness: 2, earthiness: 5, fruitiness: 3, florality: 2 },
+    source: {
+      region: 'Tamil Nadu, India',
+      elevation: 'Various',
+      harvest: 'Year-round',
+      coordinates: { lat: 11.0168, lng: 76.9558 },
+      story: 'As India\'s No.1 masala brand, Aachi has mastered the art of combining traditional spice knowledge with modern Aroma Lock Processing to deliver unbeatable freshness and flavour.'
+    },
+    healthBenefits: [
+      { name: 'Metabolism Boost', description: 'Chilli pepper supports metabolic health', icon: '🔥' },
+      { name: 'Circulation', description: 'Warming spices support healthy circulation', icon: '❤️' }
+    ],
+    tastingNotes: ['Fiery', 'Bold', 'Spicy', 'Savory'],
+    servingSize: '1–2 tsp per serving',
+    shelfLife: '18 months',
+    origin: 'India',
+    featured: true
+  },
+  {
+    id: 'aachi-fish-curry-masala',
+    name: 'Aachi Fish Curry Masala',
+    collection: 'Spices',
+    price: 5,
+    image: '/images/aachi-fish-curry-masala.jpg',
+    description: 'Premium 50g fish curry spice blend for authentic coastal flavours',
+    longDescription: 'Aachi Fish Curry Masala is a specially formulated blend of coastal spices that delivers a perfectly balanced fish curry with authentic flavour. The 50g pack is sealed with Aroma Lock Processing technology to preserve freshness and the true essence of every spice until it reaches your kitchen.',
+    flavorProfile: { spice: 7, sweetness: 2, earthiness: 6, fruitiness: 2, florality: 3 },
+    source: {
+      region: 'Tamil Nadu, India',
+      elevation: 'Coastal',
+      harvest: 'Year-round',
+      coordinates: { lat: 10.7905, lng: 79.8083 },
+      story: 'Drawing on centuries of coastal culinary traditions, Aachi Fish Curry Masala captures the bold, tangy flavours of South Indian seafood cooking in a convenient and easy-to-use format.'
+    },
+    healthBenefits: [
+      { name: 'Anti-Inflammatory', description: 'Turmeric and pepper provide natural anti-inflammatory properties', icon: '🌿' },
+      { name: 'Digestion', description: 'Spice blend aids healthy digestion', icon: '💚' }
+    ],
+    tastingNotes: ['Tangy', 'Spiced', 'Coastal', 'Robust'],
+    servingSize: '1–2 tsp per fish dish',
+    shelfLife: '18 months',
+    origin: 'India',
+    featured: true
+  },
+  {
+    id: 'amritha-incense-sticks',
+    name: 'Amritha Original Incense Sticks',
+    collection: 'Health',
+    price: 4,
+    image: '/images/amritha-incense.jpg',
+    description: 'Traditional Sri Lankan Amritha Original incense sticks for prayer and relaxation',
+    longDescription: 'Amritha Original Incense Sticks are crafted from natural aromatic ingredients following a time-honoured Sri Lankan tradition. Each stick burns slowly and evenly, releasing a rich, warm fragrance that creates a serene atmosphere for meditation, prayer, and relaxation. A trusted choice for Sri Lankan households for generations.',
+    flavorProfile: { spice: 2, sweetness: 3, earthiness: 7, fruitiness: 1, florality: 8 },
+    source: {
+      region: 'Sri Lanka',
+      elevation: 'Various',
+      harvest: 'Year-round',
+      coordinates: { lat: 6.9, lng: 79.9 },
+      story: 'Manufactured in Sri Lanka using a traditional recipe, Amritha incense sticks continue to be a household name for quality and purity. Each stick is hand-made with care and natural ingredients to ensure a gentle, long-lasting fragrance.'
+    },
+    healthBenefits: [
+      { name: 'Stress Relief', description: 'Aromatherapy to calm and relax the mind', icon: '🧘' },
+      { name: 'Air Purification', description: 'Natural smoke helps purify the surrounding air', icon: '🌿' }
+    ],
+    tastingNotes: ['Floral', 'Earthy', 'Warm', 'Aromatic'],
+    servingSize: '1 stick per use',
+    shelfLife: '24 months',
+    origin: 'Sri Lanka',
+    featured: true
+  },
+  {
     id: 'ceylon-cinnamon-premium',
     name: 'Ceylon Cinnamon Premium',
     collection: 'spices',

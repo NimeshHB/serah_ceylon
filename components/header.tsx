@@ -86,16 +86,22 @@ export function Header() {
               Recipes
             </Link>
             <Link
-              href="#sourcing"
+              href="/about"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              Our Story
+              About Us
             </Link>
             <Link
-              href="#wellness"
+              href="/contact"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              Wellness
+              Contact Us
+            </Link>
+            <Link
+              href="/cart"
+              className="text-sm font-semibold text-amber-500 hover:text-amber-400 transition-colors"
+            >
+              Cart
             </Link>
           </nav>
 
@@ -152,18 +158,25 @@ export function Header() {
               Recipes
             </Link>
             <Link
-              href="#sourcing"
+              href="/about"
               className="block text-sm text-muted-foreground hover:text-foreground py-2 transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              Our Story
+              About Us
             </Link>
             <Link
-              href="#wellness"
+              href="/contact"
               className="block text-sm text-muted-foreground hover:text-foreground py-2 transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              Wellness
+              Contact Us
+            </Link>
+            <Link
+              href="/cart"
+              className="block text-sm font-semibold text-amber-500 hover:text-amber-400 py-2 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Cart
             </Link>
           </nav>
         )}
